@@ -1,0 +1,66 @@
+.b-w {
+    color: var(--black);
+}
+
+.sidebar {
+    border-right: 2px solid var(--gray-100);
+    // box-shadow: 3px 2px 3px -1px var(--primary-200);
+    position: fixed;
+
+    .toggle-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+}
+
+.submenu {
+    transition: max-height 0.3s ease-in-out;
+
+    .sidebarSubItems {
+        color: #4b5675;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--gray-100);
+            color: var(--primary-500);
+        }
+    }
+}
+
+.submenu-tooltip {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    min-width: 180px;
+    max-width: 250px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-item:hover .submenu-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(5px); /* Slight slide-in effect */
+  }
+  
+  .submenu-tooltip a {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #333;
+    background-color: white;
+    transition: background-color 0.2s;
+  }
+  
+  .submenu-tooltip a:hover {
+    background-color: #f5f5f5;
+  }
+  

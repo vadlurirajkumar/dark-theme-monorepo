@@ -1,0 +1,20 @@
+/* styles.css */
+.toast-success-background {
+  background: linear-gradient(180deg, #48CA93 0%, #48BACA 100%);
+}
+
+.toast-error-background {
+  background: linear-gradient(180deg, #E88B76 0%, #CA5048 100%);
+  
+}
+
+.toast-info-background {
+  background:linear-gradient(180deg, #4DCAFF -18.75%, #4EA3E0 116.67%);
+}
+
+.toast-warning-background {
+ 
+  background: linear-gradient(180deg, #DBA948 100%, #FFC46B 100%, #FFA318 100%);
+}
+
+//--bs-border-color-translucent  // set border color to transparent of header

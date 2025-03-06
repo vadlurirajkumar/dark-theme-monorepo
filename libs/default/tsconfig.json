@@ -1,0 +1,16 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "esModuleInterop": true, // dayJS uses commonJS. Allow imports for CommonJS modules
+    "declaration": true, // Emit TypeScript declarations
+    "declarationMap": true, // Optional: emit declaration maps for debugging
+    "outDir": "./dist", // Output compiled files here
+    "rootDir": "./src", // Your source files location
+    "emitDeclarationOnly": false, // Ensures both JS and .d.ts files are generated
+  },
+  "include": [
+    "src",
+    "types"
+  ],
+}

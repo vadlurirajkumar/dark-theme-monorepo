@@ -1,0 +1,80 @@
+/* This hides the default arrow */
+.no-arrow::after {
+  display: none;
+}
+
+
+// Application page
+// When you need full width apply class full-width-dropdown to dropdownbuttom component
+.full-width-dropdown {
+
+  &>button {
+    width: 100%;
+    text-align: start;
+    border-radius: $border-radius-sm;
+  }
+
+  /* This hides the default arrow */
+  &>button::after {
+    display: none;
+  }
+
+  &>.dropdown-menu {
+    width: 100%;
+  }
+
+}
+
+/** 
+Custom dropdown styles used for status filters
+*/
+
+.default-dropdown {
+  width: 240px;
+
+  &>.btn {
+    // --bs-btn-bg: var(--white) !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 16px;
+    width: 100%;
+    text-align: start;
+    background-color: var(--white);
+    border: 1px solid var(--gray-300);
+    border-radius: $border-radius-sm;
+
+    &>label {
+      @extend .label-lg;
+      color: var(--gray-900)
+    }
+  }
+
+  &.btn.show {
+    background-color: var(--white);
+  }
+
+  &>button::after {
+    display: none;
+  }
+
+  /* This hides the default arrow */
+  // &>button::after {
+  //   display: none;
+  // }
+
+  &>.dropdown-menu {
+    width: 100%;
+
+    &>.dropdown-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      padding: 8px;
+    }
+
+  }
+
+}

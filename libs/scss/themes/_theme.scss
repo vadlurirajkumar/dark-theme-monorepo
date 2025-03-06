@@ -1,0 +1,158 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+// Define Bootstrap Theme Colors
+$theme-colors: $bootstrap-theme-colors;
+
+// Import Bootstrap after defining theme colors
+@import "bootstrap/scss/bootstrap";
+
+// Generate CSS variables
+@include theme-css-vars($colors-light, "light");
+@include theme-css-vars($colors-dark, "dark");
+
+// Apply light and dark theme classes
+@include theme-colors($colors-light, "light");
+@include theme-colors($colors-dark, "dark");
+
+
+
+// ************************************************** //
+// Any common changes keep above this line
+// Brand specific styles overrides
+
+// Body
+$body-bg: var(--primary-50) ;
+$body-font-family:            $font-family;
+
+// Headers 
+$headings-font-family:        $font-family;
+$headings-color:              var(--gray-900);
+$headings-font-weight:        600;
+
+
+// Inputs
+$input-bg:                    var(--gray-50);
+
+// ------------------------------------------------------ //
+// Inputs variables shared between buttons and form elements
+// https://getbootstrap.com/docs/5.3/forms/overview/
+
+// $input-btn-padding-y:         .375rem;
+// $input-btn-padding-x:         .75rem;
+// $input-btn-font-family:       null;
+// $input-btn-font-size:         $font-size-base;
+// $input-btn-line-height:       $line-height-base;
+
+// $input-btn-focus-width:         $focus-ring-width;
+// $input-btn-focus-color-opacity: $focus-ring-opacity;
+// $input-btn-focus-color:         $focus-ring-color;
+// $input-btn-focus-blur:          $focus-ring-blur;
+// $input-btn-focus-box-shadow:    $focus-ring-box-shadow;
+
+// $input-btn-padding-y-sm:      .25rem;
+// $input-btn-padding-x-sm:      .5rem;
+// $input-btn-font-size-sm:      $font-size-sm;
+
+$input-btn-padding-y-lg:      12px;
+// $input-btn-padding-x-lg:      1rem;
+$input-btn-font-size-lg:      16px;
+
+// $input-btn-border-width:      var(--#{$prefix}border-width);
+
+// ---------------------------------------------------------------- //
+
+// Borders 
+// $border-radius: 4px;
+$border-radius-sm: 4px;
+$border-radius-lg: 8px;
+
+//!TODO Used for card borders. See if it impacts other borders like inputs etc.
+$border-color-translucent: rgba(0, 0, 0, 0.10); // New translucent border color
+
+// $input-btn-border-radius:         4px;
+$input-placeholder-color:     var(--gray-400);
+
+$input-box-shadow:            0 4px 6px rgba(0, 0, 0, 0); // disable default box shadows
+$input-focus-box-shadow:      0 6px 8px rgba(0, 0, 0, 0); // disable default box focus shadows
+
+$input-border-color:          var(--gray-300);
+$input-border-width:          1px;
+
+// $input-focus-box-color:       var(--primary-600;
+// $input-focus-border-width:    2px;
+
+// Form Elements
+$form-text-color:             var(--gray-900);
+
+// $form-text-margin-top: 4px;
+// $form-text-font-size: 12px;
+// $form-text-font-style: regular;
+
+// Form validation styles -- Start
+// https: //getbootstrap.com/docs/5.2/forms/validation/#variables
+
+// $form-feedback-margin-top: $form-text-margin-top;
+// $form-feedback-font-size: $form-text-font-size;
+// $form-feedback-font-style: $form-text-font-style;
+$form-feedback-valid-color: var(--success-500);
+$form-feedback-invalid-color: var(--danger-500);
+
+$form-feedback-icon-valid-color: $form-feedback-valid-color;
+$form-feedback-icon-valid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>");
+$form-feedback-icon-invalid-color: $form-feedback-invalid-color;
+// $form-feedback-icon-invalid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='#{$form-feedback-icon-invalid-color}'><circle cx='6' cy='6' r='4.5'/><path stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/><circle cx='6' cy='8.2' r='.6' fill='#{$form-feedback-icon-invalid-color}' stroke='none'/></svg>");
+
+$form-feedback-icon-valid: none;
+$form-feedback-icon-invalid: none;
+// Form validation styles -- End
+
+$avatar-border-color:         none !important;
+$avatar-border-style:         solid;
+$avatar-border-width:         2px ;
+$avatar-border-radius:        4px;
+  
+// Default card styles
+// Inside paddings x and y 
+$card-bg: var(--white);
+$card-spacer-y: 1.5rem;
+$card-spacer-x: 1.5rem;
+
+
+$card-border-radius: 8px;
+
+// Accordins
+$accordion-padding-y: 0.5rem;
+$accordion-padding-x: 1rem;
+// $accordion-bg: var(--white);
+$accordion-border-width: 0px;
+$accordion-button-active-bg: var(--primary-50);
+$accordion-button-focus-box-shadow: none;
+
+$accordion-icon-width: 1rem;
+
+// Nav tabs
+$nav-link-color: var(--gray-600);
+// Override underline style variations
+$nav-underline-link-active-color: var(--primary-500);
+
+// Dropdowns
+$dropdown-padding-x: 0.25rem;
+
+$dropdown-bg: var(--white);
+$dropdown-link-color: var(--gray-800);
+$dropdown-link-hover-color: $dropdown-link-color;
+$dropdown-link-hover-bg: var(--primary-300);
+
+// Modals
+
+$modal-sm: 420px;
+
+$modal-content-bg: var(--white);
+
+$mobile-screen-padding-xs: 4px;
+$mobile-screen-padding-sm: 8px;
+$mobile-screen-padding-md: 16px;
+$mobile-screen-padding-lg: 24px;
+
+$mobile-screen-padding-default: $mobile-screen-padding-sm;

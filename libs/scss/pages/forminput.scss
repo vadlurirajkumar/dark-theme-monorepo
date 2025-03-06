@@ -1,0 +1,17 @@
+.searchIcon-position {
+  position: absolute;
+  left: 16px;
+  top: 48%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 100;
+}
+
+.list-group-item-hover {
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(60,101,245,0.5) !important;
+  }
+}

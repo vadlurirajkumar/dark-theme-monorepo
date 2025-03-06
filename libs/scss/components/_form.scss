@@ -1,0 +1,48 @@
+
+// form control for all states
+.form-control {
+  border-radius: $border-radius-sm;
+  
+  &:focus {
+    border-color: var(--primary-600) ;
+  }
+
+  &:invalid:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--danger-500), 0);
+  }
+
+  &.is-invalid:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--danger-500), 0);
+  }
+}
+
+// Form changes acorss the product
+.form-label {
+  margin-bottom: .25rem;
+  font-size: 12px;
+}
+
+// Input with icon
+.input-with-icon {
+  position: relative;
+  width: 100%;
+}
+
+.form-control-with-icon {
+  padding-right: 2.5rem;  /* Make space for the icon on the right side */
+}
+
+.password-icon {
+  position: absolute;
+  right: 16px;
+  top: 24px;
+  transform: translateY(-50%);
+}
+
+// Disable browser default input type number spin buttons
+/* For Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

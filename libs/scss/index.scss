@@ -1,0 +1,49 @@
+// this is typography.scss
+@import "@fontsource/inter";
+
+// font-family default
+$font-family: 'Inter', system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+//commons
+@import "common/commons";
+
+// importing theme
+@import "themes/theme";
+    
+// typography
+@import "base/typography";
+
+//layouts
+@import "layout/header";
+@import "layout/footer";
+
+//components
+@import "components/_sidebar.scss";
+@import "components/_smcards.scss";
+@import "components/_avatars.scss";
+
+//pages
+@import "pages/test.scss";
+
+// importing components/button.scss
+@import 'components/_companylogo.scss';
+@import 'components/_avatar.scss';
+@import 'components/_badge.scss';
+@import 'components/_button.scss';
+@import 'components/_dropdown.scss';
+@import 'components/_form.scss';
+@import 'components/_card.scss';
+@import 'components/_loading.scss';
+@import 'components/profile.scss';
+@import 'components/home.scss';
+@import 'components/_jobcard.scss';
+@import 'components/companies.scss';
+@import 'components/_inputfloating.scss';
+@import "components/_toast.scss";
+@import 'components/_icons.scss';
+
+// Override styles for pages
+@import "pages/_auth.scss";
+@import "pages/_onboarding.scss";
+@import "pages/forminput.scss";
+@import "pages/_contactus.scss";

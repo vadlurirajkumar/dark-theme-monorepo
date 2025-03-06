@@ -1,0 +1,17 @@
+@import "./variables-light";
+@import "./variables-dark";
+
+$bootstrap-theme-colors: (
+);
+
+@each $color, $shades in $colors-light {
+  @each $shade, $shade-color in $shades {
+    $bootstrap-theme-colors: map-merge($bootstrap-theme-colors,
+        (#{$color}-#{$shade}: $shade-color));
+  }
+}
+
+// Define the default Bootstrap colors
+$theme-colors: $bootstrap-theme-colors;
+
+

@@ -1,0 +1,57 @@
+.card {
+  // Override the Bootstrap card border radius to 8px
+  //--bs-card-border-radius: 8px;
+
+  .col {
+
+    // Styles for columns within the card
+    & .md-4 {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+
+    & .md-6 {
+      margin-top: 24px; // Add top margin for columns with class "md-6"
+    }
+  }
+}
+
+
+// skills
+.custom-gap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chip {
+  padding: 8px 12px;
+}
+
+// portfolioCard
+.feather-dribbble {
+  background-color: hotpink;
+  border-radius: 40px;
+  color: deeppink;
+}
+
+.feather-instagram {
+  color: red;
+
+}
+
+.profile-top-card {
+  font-size: 14px;
+  color: $gray-500;
+  padding: 16px;
+  height: auto;
+  // position: relative;
+  // top: 24px;
+  border-color: $gray-600;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  background: rgba(112, 140, 165, 0.20);
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(37.401573181152344px);
+}

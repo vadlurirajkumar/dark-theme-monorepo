@@ -1,0 +1,41 @@
+$colors-dark: (
+  //default colors
+  "blue": (default: #007bee),
+  "indigo": (default: #6610f2),
+  "purple": (default: #6f42c1),
+  "pink": (default: #e83e8c),
+  "red": (default: #dc3545),
+  "orange": (default: #fd7e14),
+  "yellow": (default: #ffc107),
+  "green": (default: #28a745),
+  "teal": (default: #20c997),
+  "cyan": (default: #17a2b8),
+  "white": (default: #000),
+  "black": (default: #fff),
+  "light":(default: #F3F4F6),
+
+
+  "primary": (50: #F7FEE7,
+    100: #ECFCCB,
+    200: #D9F99D,
+    300: #BEF264,
+    400: #A3E635,
+    500: #84CC16,
+    600: #65A30D,
+    700: #4D7C0F,
+    800: #3F6212,
+    900: #365314,
+    default: #84CC16),
+
+  "danger": (50: #ffe8ea,
+    100: #c7d2fe,
+    200: #a5b4fc,
+    300: #818cf8,
+    400: #6366f1,
+    500: #4f46e5,
+    600: #4338ca,
+    700: #3730a3,
+    800: #312e81,
+    900: #1e1b4b,
+    default: #4f46e5)
+);

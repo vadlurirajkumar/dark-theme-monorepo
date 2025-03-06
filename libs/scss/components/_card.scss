@@ -1,0 +1,14 @@
+.card > hr {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.card {
+  .key {
+    color: var(--gray-900);
+    font-weight: 600;
+  }
+  .value {
+    color: var(--gray-500);
+  }
+}

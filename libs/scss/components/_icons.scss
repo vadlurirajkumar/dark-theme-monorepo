@@ -1,0 +1,9 @@
+/* CSS for hover effect */
+.icon-hover {
+  color: slategrey;
+
+  :hover {
+    color: rgb(215, 23, 23);
+    /* Red color on hover */
+  }
+}

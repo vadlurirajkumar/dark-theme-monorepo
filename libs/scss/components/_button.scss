@@ -1,0 +1,51 @@
+.btn {
+  font-family: $font-family;
+  // margin-top: 5px;
+
+  //Button Sizes
+
+  &-lg {
+    /* Large size */
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 4px;
+  }
+
+  &-md {
+    /* Medium size */
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+  }
+
+  &-sm {
+    /* Small size */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+  }
+
+  &-xs {
+    /* Extra small size */
+    font-size: 12px;
+    font-weight: 400;
+    padding: 6px 12px;
+  }
+
+}
+
+
+.default,.rounded, .outline {
+
+  margin-bottom: 15px;
+
+}
+
+
+.icon-inside {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px; // Adjust padding to your liking
+}

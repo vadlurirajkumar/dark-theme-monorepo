@@ -1,0 +1,27 @@
+.navItem{
+    color: #4b5675;
+    cursor: pointer;
+    &:hover{
+        color: var(--primary-500);
+    }
+}
+
+.user-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.drop-menu-list {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 250px;
+    z-index: 99;
+    .drop-item {
+        cursor: pointer;
+        background-color: var(--white);
+        &:hover {
+            background-color: var(--primary-200);
+        }
+    }
+}

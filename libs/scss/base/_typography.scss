@@ -1,0 +1,133 @@
+
+// ********* Headers and Paragraphs ********* //
+
+body {
+    font-family: $font-family;
+}
+
+.font-bold{
+    font-weight: 700 !important;
+}
+
+.font-semi-bold{
+    font-weight: 600 !important;
+}
+
+.font-medium{
+    font-weight: 500 !important;
+}
+
+.font-regular{
+    font-weight: 400 !important;
+}
+
+.font-light{
+    font-weight: 300 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    // font-weight: 600;
+    letter-spacing: 0.025rem;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+p,
+label,
+div,
+a,
+span {
+    font-weight: 400;
+    letter-spacing: 0.025rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 52px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+// ********* Paragraph Styles ********* //
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.p-lg {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.p-md {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.p-sm {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.p-xs {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+// ********* Label Styles ********* //
+label {
+    color: $gray-700;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.label-lg {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.label-md {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.label-sm {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.label-xs {
+    font-size: 10px;
+    line-height: 14px;
+}

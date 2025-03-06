@@ -1,0 +1,12 @@
+.loading-section {
+  height: 75vh;
+
+  &> .loader {
+    // width: 48px;
+    margin: auto;
+    position: relative;
+    top: 40%;
+    left: 50%;
+  }
+
+}

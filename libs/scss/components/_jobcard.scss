@@ -1,0 +1,24 @@
+#jobcard {
+
+
+
+
+  // jobcard avatar online position
+  .translate-middle {
+    transform: translate(-1%, -9%) !important;
+  }
+
+}
+
+.icon-circle {
+  width: 38px !important;
+  height: 38px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px;
+  border-color: var(--gray-200);
+  border-radius: 50%;
+  background-color: var(--white);
+  //padding: 4px;
+}

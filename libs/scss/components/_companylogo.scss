@@ -1,0 +1,50 @@
+
+
+
+$c-logo-border-color: var(--gray--200) !important;
+$c-logo-border-style: solid !default;
+$c-logo-border-width: 1px !default;
+$c-logo-border-radius: 50% !default;
+
+
+.c-logo {
+  border: $c-logo-border-color;
+  border-style: $c-logo-border-style ;
+  border-width: $c-logo-border-width;
+  // border-radius: $c-logo-border-radius;
+.c-logo-xs {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .c-logo-xs {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .c-logo-sm {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  .c-logo-md {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  .c-logo-lg {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+
+  .c-logo-xl {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .c-logo-xxl {
+    height: 7.5rem;
+    width: 7.5rem;
+  }
+}
+

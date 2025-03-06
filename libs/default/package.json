@@ -1,0 +1,20 @@
+{
+  "name": "@example/default",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "test -d dist || mkdir dist && cp -r src/* dist/",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

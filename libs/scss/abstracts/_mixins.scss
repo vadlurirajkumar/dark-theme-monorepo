@@ -1,0 +1,73 @@
+// Mixin to generate theme colors
+@mixin theme-colors($theme-map, $theme-name) {
+  [data-bs-theme="#{$theme-name}"] {
+    @each $color, $shades in $theme-map {
+      @if type-of($shades)=="map" {
+        $default-color: map-get($shades, "default");
+
+        // Default Bootstrap classes (e.g., bg-primary, text-primary)
+        .text-#{$color} {
+          color: $default-color !important;
+        }
+
+        .bg-#{$color} {
+          background-color: $default-color !important;
+        }
+
+        .border-#{$color} {
+          border-color: $default-color !important;
+        }
+
+        .btn-#{$color} {
+          background-color: $default-color !important;
+          border-color: $default-color !important;
+        }
+
+        .btn-outline-#{$color} {
+          border-color: $default-color !important;
+          color: $default-color !important; // ✅ Fix: Apply text color too
+        }
+
+        // Generate custom shade classes (e.g., bg-primary-200)
+        @each $shade, $shade-color in $shades {
+          @if $shade !="default" {
+            .text-#{$color}-#{$shade} {
+              color: $shade-color !important;
+            }
+
+            .bg-#{$color}-#{$shade} {
+              background-color: $shade-color !important;
+            }
+
+            .border-#{$color}-#{$shade} {
+              border-color: $shade-color !important;
+            }
+
+            .btn-#{$color}-#{$shade} {
+              background-color: $shade-color !important;
+              border-color: $shade-color !important;
+            }
+
+            .btn-outline-#{$color}-#{$shade} {
+              border-color: $shade-color !important;
+              color: $shade-color !important; // ✅ Fix: Apply text color too
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mixin to generate CSS variables for colors
+@mixin theme-css-vars($theme-map, $theme-name) {
+  [data-bs-theme="#{$theme-name}"] {
+    @each $color, $shades in $theme-map {
+      @if type-of($shades)=="map" {
+        @each $shade, $shade-color in $shades {
+          --#{$color}-#{$shade}: #{$shade-color};
+        }
+      }
+    }
+  }
+}
